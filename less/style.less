@@ -1,0 +1,41 @@
+@import "normalize.less";
+
+@bgColor: #fff;
+
+@textColor: #262219;
+@secondaryFont: BebasNeueRegular, sans-serif;
+@accentColor: #faf8f5;
+@maxWidth: 870 / 100;
+.rounded-corners (@radius: 3px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('font/BebasNeue-webfont.eot');
+    src: url('font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/BebasNeue-webfont.woff') format('woff'),
+         url('font/BebasNeue-webfont.ttf') format('truetype'),
+         url('font/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* GLOBAL
+----------------------------------------------- */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* TYPE
+----------------------------------------------- */
+
+
+@import "media-queries.less";
+@import "helpers.less";
+@import "print.less";
