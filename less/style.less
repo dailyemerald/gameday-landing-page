@@ -85,8 +85,9 @@ header p {
 ----------------------------------------------- */
 .social {
   float: right;
+  height: 24px;
   margin-right: -20px;
-  margin-top: 6px;
+  padding-top: 6px;
   width: 210px;
 }
 
@@ -105,13 +106,6 @@ header p {
 
 }
 
-.phone {
-  float: left;
-  margin-right: 110px;
-  margin-top: 72px;
-  width: 330px;
-}
-
 .app-store { 
   float: left;
   margin-top: 269px;
@@ -126,6 +120,74 @@ header p {
   text-indent: -9999em;
   width: 190px;
 }
+
+
+/* PHONE
+----------------------------------------------- */
+.phone {
+  float: left;
+  margin-right: 110px;
+  margin-top: 72px;
+  position: relative;
+  width: 330px;
+}
+
+/*! http://responsiveslides.com v1.32 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+  /* PAGINATION */
+  .rslides_tabs {
+    left: 139px;
+    list-style: none;
+    position: absolute;
+    top: 670px;
+    width: 330px;
+  }
+  
+  .rslides_tabs li {
+    
+  }
+  
+  .rslides_tabs li a {
+    float: left;
+    padding: 10px;
+    text-indent: -9999em;
+    background: url(images/slider-pager-off.png) no-repeat 0 0;
+  }
+  
+  li.rslides_here a {
+    background: url(images/slider-pager-on.png) no-repeat 0 0;
+  }
 
 
 /* MARKETING
