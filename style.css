@@ -279,11 +279,9 @@ h1 {
 /* HEADER
 ----------------------------------------------- */
 header {
-  /*   background: #ddd; */
-
   left: 440px;
   position: absolute;
-  top: 47px;
+  top: 42px;
   width: 520px;
 }
 header p {
@@ -295,17 +293,22 @@ header p {
 /* SOCIAL
 ----------------------------------------------- */
 .social {
+  bottom: 27px;
   float: right;
-  height: 24px;
-  margin-right: -20px;
-  padding-top: 6px;
-  width: 210px;
+  height: 33px;
+  /*   padding-top: 6px; */
+
+  position: fixed;
+  right: 0;
 }
 .fb_edge_widget_with_comment {
+  clear: both;
   float: left;
+  margin-bottom: 6px;
 }
 .twitter-share-button {
-  float: right;
+  clear: both;
+  float: left;
 }
 /* CONTENT
 ----------------------------------------------- */
@@ -329,7 +332,7 @@ header p {
   float: left;
   height: 755px;
   margin-right: 110px;
-  margin-top: 72px;
+  margin-top: 64px;
   position: relative;
   width: 330px;
 }
@@ -431,7 +434,7 @@ li.rslides_here a {
 ----------------------------------------------- */
 footer {
   background: #474747;
-  height: 48px;
+  height: 69px;
   width: 100%;
 }
 footer ul {
