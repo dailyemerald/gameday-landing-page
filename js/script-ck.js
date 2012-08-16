@@ -1,1 +1,0 @@
-$(".rslides").responsiveSlides({auto:!0,pager:!0,speed:1200,maxwidth:330});

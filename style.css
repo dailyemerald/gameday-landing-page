@@ -274,7 +274,7 @@ h1 {
   font-size: 100px;
   font-weight: normal;
   margin: 0;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
 /* HEADER
 ----------------------------------------------- */
@@ -290,7 +290,7 @@ header p {
   color: #fff;
   font-size: 20px;
   margin: -25px 0 0 0;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
 /* SOCIAL
 ----------------------------------------------- */
@@ -302,8 +302,6 @@ header p {
   width: 210px;
 }
 .fb_edge_widget_with_comment {
-  /*   margin-top: 5px; */
-
   float: left;
 }
 .twitter-share-button {
@@ -327,7 +325,9 @@ header p {
 /* PHONE
 ----------------------------------------------- */
 .phone {
+  background: url(images/phone-screenshot.png) no-repeat 0 0;
   float: left;
+  height: 755px;
   margin-right: 110px;
   margin-top: 72px;
   position: relative;
@@ -336,11 +336,13 @@ header p {
 /*! http://responsiveslides.com v1.32 by @viljamis */
 .rslides {
   position: relative;
+  left: 28px;
   list-style: none;
   overflow: hidden;
   width: 100%;
   padding: 0;
   margin: 0;
+  top: 120px;
 }
 .rslides li {
   position: absolute;
@@ -419,6 +421,8 @@ li.rslides_here a {
 .credits .duckstore {
   background: url(images/duck-store.png) no-repeat center 0;
   height: 70px;
+  margin-right: 120px;
+  width: 324px;
 }
 .credits .emg {
   background: url(images/emg.png) no-repeat center 0;

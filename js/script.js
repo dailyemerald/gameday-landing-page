@@ -1,10 +1,7 @@
 $(".rslides").responsiveSlides({
   auto: true,
   pager: true,
-  speed: 1200,
-  maxwidth: 330
+  speed: 1000,
+  timeout: 7000,
+  maxwidth: 278
 });
-
-
-
-
