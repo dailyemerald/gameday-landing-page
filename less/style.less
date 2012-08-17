@@ -1,12 +1,12 @@
 @import "normalize.less";
 
 @bgColor: #fff;
-
 @textColor: #262219;
 @primaryFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @secondaryFont: 'BebasNeueRegular', sans-serif;
 @accentColor: #faf8f5;
-@maxWidth: 870 / 100;
+@maxWidth: 960 / 100;
+
 .rounded-corners (@radius: 3px) {
   border-radius: @radius;
   -webkit-border-radius: @radius;
@@ -49,9 +49,14 @@ body {
 #wrapper {
   margin: 0 auto 51px auto;
   position: relative;
-  width: 960px;
+  max-width: 60em; /* 960 */ 
+  padding: 0 1em;
 }
 
+#main {
+  display: inline-block;
+  max-width: 100%;
+}
 
 /* TYPE
 ----------------------------------------------- */
@@ -67,15 +72,15 @@ h1 {
 /* HEADER
 ----------------------------------------------- */
 header {
-  left: 440px;
+  left: 440% / @maxWidth;
   position: absolute;
   top: 42px;
-  width: 520px;
+  max-width: 520% / @maxWidth;
 }
 
 header p {
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25em;
   margin: -25px 0 0 0;
   text-shadow: 0 0 3px rgba(0,0,0,.4);
 }
@@ -86,7 +91,6 @@ header p {
   bottom: 27px;
   float: right;
   height: 33px;
-/*   padding-top: 6px; */
   position: fixed;
   right: 0;
 }
@@ -106,17 +110,18 @@ header p {
 ----------------------------------------------- */
 .app-store { 
   float: left;
+  margin-left: 110% / @maxWidth;
   margin-top: 269px;
-  width: 520px;
+  max-width: 520% / @maxWidth;
 }
 
 .appstore {
   background: url(images/app-store.png) no-repeat 0 0;
   display: inline-block;
   height: 65px;
-  margin: 0 0 0 165px;
+  margin: 0 0 0 165px; /*GF*/
   text-indent: -9999em;
-  width: 190px;
+  width: 190px; /*GF*/
 }
 
 .appstore:hover {
@@ -130,13 +135,13 @@ header p {
   background: url(images/phone-screenshot.png) no-repeat 0 0;
   float: left;
   height: 755px;
-  margin-right: 110px;
+  /* margin-right: 11.458333333%; */ /* 110/960 11.458333333%*/
   margin-top: 64px;
   position: relative;
-  width: 330px;
+  width: 330px; 
 }
 
-.rslides {
+ul.rslides {
   position: relative;
   left: 28px;
   list-style: none;
@@ -145,6 +150,7 @@ header p {
   padding: 0;
   margin: 0;
   top: 120px;
+  -webkit-padding-start: 0;
 }
 
 .rslides li {
@@ -199,14 +205,16 @@ header p {
 .marketing {
   color: #3d3d3d;
   float: left;
+  margin-left: 110% / @maxWidth;
   margin-top: 150px;
-  width: 520px;  
+  max-width: 410% / @maxWidth;
 }
 
 .marketing li {
   margin-bottom: 21px;
-  padding: 12px 0 21px 100px;
+  padding: 12px 0 21px 24.390243902%;  /* 100px */
   list-style: none;
+  width: 100%;
 }
 
 .marketing li.news {
@@ -233,7 +241,10 @@ header p {
   margin: 90px 0 99px 0;
   opacity: .5;
   text-indent: -9999em;
-  width: 480px;
+  width: 480% / @maxWidth;
+  
+  
+  display: none;
 }
 
 .credits a:hover {
@@ -243,8 +254,8 @@ header p {
 .credits .duckstore {
   background: url(images/duck-store.png) no-repeat center 0;
   height: 70px;
-  margin-right: 120px;
-  width: 324px;
+  margin-right: 12.5%; /* 120/960 12.5%*/
+  width: 33.75%; /* 324/960 .3375%*/
 }
 
 .credits .emg {
