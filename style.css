@@ -442,6 +442,7 @@ li.rslides_here a {
 .credits .duckstore {
   background: url(images/duck-store.png) no-repeat center 0;
   height: 70px;
+  margin-left: 0.5%;
   margin-right: 12.5%;
   /* 120/960 12.5%*/
 
