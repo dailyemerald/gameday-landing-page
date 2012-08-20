@@ -299,11 +299,11 @@ header p {
 /* SOCIAL
 ----------------------------------------------- */
 .social {
-  bottom: 24px;
   float: right;
   height: 33px;
   position: fixed;
   right: 0;
+  top: 500px;
 }
 .fb_edge_widget_with_comment {
   clear: both;
