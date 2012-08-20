@@ -38,6 +38,16 @@
     mixpanel.init("7d374e37ebf2de8ddcc2e50353b0809b");
 </script>
 
+<script type="text/javascript">
+mixpanel.track('pageview');
+mixpanel.track_links('#app-store', 'app store');
+mixpanel.track_links('#credits-duckstore', 'credits duckstore');
+mixpanel.track_links('#credits-emg', 'credits emb');
+mixpanel.track_links('#footer-app-store', 'footer app store');
+mixpanel.track_links('#footer-dailyemerald', 'footer dailyemerald');
+mixpanel.track_links('#footer-support', 'footer support');
+</script>
+
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -69,7 +79,7 @@
     </div>
     
     <div class="app-store">
-      <a href="http://itunes.apple.com/us/app/ducks-gameday/id547533012" class="appstore">Available on the App Store</a>
+      <a id="app-store" href="http://itunes.apple.com/us/app/ducks-gameday/id547533012" class="appstore">Available on the App Store</a>
       
     </div>
     
@@ -82,8 +92,8 @@
     </div>
     
     <div class="credits">
-      <a href="http://uoduckstore.com/" class="duckstore" target="_blank">Sponsored by The UO Duck Store</a>
-      <a href="http://dailyemerald.com/" class="emg" target="_blank">Presented by Emerald Media Group</a>
+      <a id="credits-duckstore" href="http://uoduckstore.com/" class="duckstore" target="_blank">Sponsored by The UO Duck Store</a>
+      <a id="credits-emg"       href="http://dailyemerald.com/" class="emg" target="_blank">Presented by Emerald Media Group</a>
       
       
     </div>
@@ -94,9 +104,9 @@
 </div> <!-- #wrapper -->
 <footer>
   <ul>
-    <li><a href="http://itunes.apple.com/us/app/ducks-gameday/id547533012">App Store</a></li>
-    <li><a href="http://dailyemerald.com/">DailyEmerald.com</a></li>
-    <li><a href="https://docs.google.com/a/dailyemerald.com/spreadsheet/viewform?formkey=dHNyMmJ6TmlNRk5aQWVMRlRxWWZWYXc6MQ#gid=0">Support</a></li>
+    <li><a id="footer-app-store"      href="http://itunes.apple.com/us/app/ducks-gameday/id547533012">App Store</a></li>
+    <li><a id="footer-dailyemerald" href="http://dailyemerald.com/">DailyEmerald.com</a></li>
+    <li><a id="footer-support"      href="https://docs.google.com/a/dailyemerald.com/spreadsheet/viewform?formkey=dHNyMmJ6TmlNRk5aQWVMRlRxWWZWYXc6MQ#gid=0">Support</a></li>
   </ul>
 
 </footer>
