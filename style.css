@@ -431,11 +431,10 @@ li.rslides_here a {
 }
 .credits a {
   float: left;
-  margin: 90px 0 99px 0;
+  margin: 90px 0 126px 0;
   opacity: .5;
   text-indent: -9999em;
   width: 50%;
-  display: none;
 }
 .credits a:hover {
   opacity: 1;
